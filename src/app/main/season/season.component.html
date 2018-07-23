@@ -1,0 +1,12 @@
+
+<mat-list>
+    <h3 mat-subheader>{{ season }} Season</h3>
+  <mat-list-item *ngFor="let el of races">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{ el.round}}. {{ el.raceName }} <small>{{ el.date | date}}</small></h4>
+      
+        <h5 mat-line>
+          {{ el.Circuit.circuitName }}
+        </h5>
+    </mat-list-item>
+</mat-list>

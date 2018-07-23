@@ -1,0 +1,69 @@
+{
+	"race":	{
+		"id": 1,
+		"round": 1,
+        "name": "Australian Grand Prix,
+        "date": "May 1996",
+		"circuit": "Melbourne",
+		"sessions": ["race", "warm-up", "saturday-qualifying"],
+		"session-data": [
+				{"session": "race",
+				"filename": "Formula 1 - s1996e01 - Australian Grand Prix.avi",
+				"commentary": "BBC",
+				"length": 123,
+				"size": 1403.28,
+				"screen_url": "./assets/screengrab"},
+				{"session": "warm-up",
+				"commentary": "Eurosort",
+				"length": 123,
+				"size": 1234,
+				"screen_url": "./assets/screengrab"},
+				{"session": "saturday-qualifying",
+				"commentary": "BBC",
+				"length": 123,
+				"size": 1234,
+				"screen_url": "./assets/screengrab"}
+			]
+			},
+	"race":	{
+		"id": 2,
+		"round": 12,
+        "name": "Belgian Grand Prix",
+        "date": "August 1996",
+		"circuit": "Spa-Francorchamps",
+		"sessions": [],
+		"session-data": [
+				{"session": "race",
+				"commentary": "BBC",
+				"length": 123,
+				"size": 1234,
+				"screen_url": "./assets/screengrab"},
+				{"session": "warm-up",
+				"commentary": "Eurosort",
+				"length": 123,
+				"size": 1234,
+				"screen_url": "./assets/screengrab"},
+				{"session": "saturday-qualifying",
+				"commentary": "BBC",
+				"length": 123,
+				"size": 1234,
+				"screen_url": "./assets/screengrab"}
+			]
+			}
+	"race":	{
+		"id": 3,
+		"round": 1,
+        "name": "Brazilian Grand Prix",
+        "date": "March 1997",
+		"circuit": "Jacarapagua",
+		"sessions": ["race"],
+		"session-data": [
+				{"session": "race",
+				"filename": "formula.one.1987.race.01.rio.de.janeiro.pdtv.x264-lightspeed.mkv",
+				"commentary": "BBC",
+				"length": 123,
+				"size": 2583.99,
+				"screen_url": "./assets/screengrab"}
+			]
+			},
+}
