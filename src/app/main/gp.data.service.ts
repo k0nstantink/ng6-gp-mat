@@ -37,13 +37,11 @@ export class GpDataService {
         return chip;
     }
 
-    hm() {
-        console.log('hmmm');
+    getSeason(year: number): Observable<Seasons> {
+        return this.http.get<Seasons>(`${this._api}/seasons/${year}season.json`);
     }
 
-    getSeason(year: number): Observable<Seasons> {
-        console.log('called');
-        // return this.http.get<any>('../../assets/api/seasons/1953season.json');
-        return this.http.get<Seasons>(`${this._api}/seasons/${year}season.json`);
+    getRaces(year: number ): Observable<any> {
+        return this.http.get<any>(`${this._api}/results/${year}results.json`);
     }
 }

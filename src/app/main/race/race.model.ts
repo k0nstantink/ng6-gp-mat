@@ -1,4 +1,4 @@
-export interface IRaceModel {
+export interface RaceModel {
 
     MRData: {
             xmlns: string,
@@ -19,6 +19,7 @@ export interface IRaceModel {
                     circuitId: string,
                     url: string,
                     circuitName: string,
+                    circuitImage?: string,
                     Location: {
                     lat: string,
                     long: string,

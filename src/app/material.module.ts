@@ -15,6 +15,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatTableModule } from '@angular/material/table';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
     declarations: [],
@@ -34,7 +36,9 @@ import { MatChipsModule } from '@angular/material/chips';
         MatSelectModule,
         MatProgressSpinnerModule,
         MatDialogModule,
-        MatChipsModule
+        MatChipsModule,
+        MatTableModule,
+        MatTreeModule
         ],
     exports: [
         MatToolbarModule,
@@ -52,7 +56,9 @@ import { MatChipsModule } from '@angular/material/chips';
         MatSelectModule,
         MatProgressSpinnerModule,
         MatDialogModule,
-        MatChipsModule
+        MatChipsModule,
+        MatTableModule,
+        MatTreeModule
         ],
     providers: [],
 })

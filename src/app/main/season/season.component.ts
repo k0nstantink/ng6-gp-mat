@@ -27,7 +27,6 @@ export class SeasonComponent implements OnInit {
     this.gpDataService.getSeason(this.season)
     .subscribe((r) => {
       this.races = r.MRData.RaceTable.Races;
-      console.log(this.races);
     });
   }
 

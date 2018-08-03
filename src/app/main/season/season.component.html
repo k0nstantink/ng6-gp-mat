@@ -1,12 +1,24 @@
-
+<mat-tab-group>
+  <mat-tab label="Races">
 <mat-list>
     <h3 mat-subheader>{{ season }} Season</h3>
-  <mat-list-item *ngFor="let el of races">
+
+  <a *ngFor="let el of races" routerLink="/season/{{ season }}/{{ el.round }}" mat-list-item >
       <mat-icon mat-list-icon>folder</mat-icon>
       <h4 mat-line>{{ el.round}}. {{ el.raceName }} <small>{{ el.date | date}}</small></h4>
-      
         <h5 mat-line>
           {{ el.Circuit.circuitName }}
         </h5>
-    </mat-list-item>
+  </a>
 </mat-list>
+</mat-tab>
+<mat-tab label="Standings">
+   Constructor and Drivers Championship standings
+</mat-tab>
+<mat-tab label="Drivers">
+<app-drivers></app-drivers>
+</mat-tab>
+<mat-tab label="Constructors">
+ <app-constructors></app-constructors>
+ </mat-tab>
+</mat-tab-group>

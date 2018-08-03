@@ -1,0 +1,8 @@
+<div fxFlex fxLayoutAlign="center center" *ngIf="programData">
+<img 
+    class="program-image" 
+    src="assets/img/programs/{{ programData.season }}/{{ programData.raceName }}.jpg"
+    (error)="img.src = '/assets/img/common/placeholder.jpg'"
+    #img
+>
+</div>

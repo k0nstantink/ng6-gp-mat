@@ -3,6 +3,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
+// Google Maps Module
+import { AgmCoreModule } from '@agm/core';
+
 // Material Modules //
   // (mat-slide-toggle, mat-slider, matTooltip) gesture support
 import 'hammerjs';
@@ -13,6 +16,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Routing Module
 import { AppRoutingModule } from './app.routing.module';
+
 // App components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,11 +27,21 @@ import { EraComponent } from './main/era/era.component';
 import { ErasComponent } from './main/eras/eras.component';
 import { SeasonComponent } from './main/season/season.component';
 import { RaceComponent } from './main/race/race.component';
+import { ProgramComponent } from './main/race/program/program.component';
+import { CircuitComponent } from './main/race/circuit/circuit.component';
+import { ResultsComponent } from './main/race/results/results.component';
+import { OverviewComponent } from './main/race/overview/overview.component';
+import { ConstructorsComponent } from './main/season/constructors/constructors.component';
+import { DriversComponent } from './main/season/drivers/drivers.component';
 // Services
 import { GpDataService } from './main/gp.data.service';
 
 // Models
 import { Eras } from './main/eras.model';
+import { GoogleMapComponent } from './main/race/circuit/google-map/google-map.component';
+
+
+
 
 
 
@@ -41,7 +55,14 @@ import { Eras } from './main/eras.model';
     ErasComponent,
     SeasonComponent,
     SidenavListComponent,
-    RaceComponent
+    RaceComponent,
+    ProgramComponent,
+    CircuitComponent,
+    ResultsComponent,
+    OverviewComponent,
+    ConstructorsComponent,
+    DriversComponent,
+    GoogleMapComponent
   ],
   imports: [
     AppRoutingModule,
@@ -50,7 +71,10 @@ import { Eras } from './main/eras.model';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD7xsaudIFMRetCwhUjfMievRXg1dVHZCw'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
