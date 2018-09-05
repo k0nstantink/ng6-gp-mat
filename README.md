@@ -34,3 +34,22 @@ Registration for video
 D3 stats
 Grid/cars
 
+# F1 App
+Mobile F1 Stats App.
+
+  - All Results from 1950 to present
+  - Links to Wiki Race Reports
+  - Circuit Maps
+  - Program Covers
+
+# New Features!
+
+  - Google Maps Circuit
+  - Program Covers
+
+### Tech
+
+F1 Stats App uses a number of open source projects to work properly:
+
+* [Angular6] - JavaScript Framework
+* [Angular Material] - Material Design components for Angular

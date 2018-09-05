@@ -11,7 +11,6 @@ export class CircuitComponent implements OnInit {
   @Input() circuitData: Circuit;
 
  toggleCircuit = false;
- checkboxMessage = 'Show Info';
  latitude;
  longitude;
  map = false;
@@ -19,7 +18,6 @@ export class CircuitComponent implements OnInit {
   constructor() { }
 
   onToggleMap() {
-    this.checkboxMessage = this.toggleCircuit ? 'Show Info' : 'Show Circuit Map';
     this.toggleCircuit = !this.toggleCircuit;
   }
 

@@ -9,7 +9,7 @@
     <img mat-card-image src="assets/img/{{ element.img }}">
     <mat-card-content>
         <p>{{ element.desc }}</p>
-<mat-chip-list>
+            <mat-chip-list>
             <mat-chip color="accent" selected="true" *ngFor="let el of range">
                <a routerLink="/season/{{ el }}">{{ el }}</a>
             </mat-chip>

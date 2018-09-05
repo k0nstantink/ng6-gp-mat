@@ -1,33 +1,29 @@
 
-<div *ngIf="map == false else showMap"> 
-  <div fxFlex fxLayout="column" fxLayoutAlign="center center">
-
-<div fxLayout="row" >
-    <h4 class="mat-subheading-1">{{ circuitData.Circuit.circuitName }}</h4>
-  <button mat-icon-button (click)="map = !map"><mat-icon>map</mat-icon></button>
+<div class="container">
+    <div class="left"></div>
+    <div class="center"><h4>{{ circuitData.Circuit.circuitName }}</h4></div>
+    <div class="right">
+      <button mat-icon-button (click)="map = !map">
+        <mat-icon>map</mat-icon>
+      </button></div>
 </div>
 
+<div *ngIf="map == false else showMap" class="map-container"> 
+  <!-- circuit info toggle button -->
+    <!-- <button 
+      mat-stroked-button
+      (click)="onToggleMap()" 
+      [disabled]="!circuitData.Circuit.circuitInfo">
+     Show Info
+    </button> -->
+    <h5 class="body-1" *ngIf="toggleCircuit">{{ circuitData.Circuit.circuitInfo }}</h5>
+    <img 
+      *ngIf="!toggleCircuit"
+      src="assets/img/circuits/{{ circuitData.Circuit.circuitImage }}">
+</div>
 
-<button 
-  mat-stroked-button
-  (click)="onToggleMap()" 
-  [disabled]="!circuitData.Circuit.circuitInfo">
-  {{ checkboxMessage }}
-</button>
-
-  <h5 class="body-1" *ngIf="toggleCircuit">{{ circuitData.Circuit.circuitInfo }}</h5>
-  <img 
-    *ngIf="!toggleCircuit"
-    src="assets/img/circuits/{{ circuitData.Circuit.circuitImage }}">
-</div></div>
-
+<!-- Google Map -->
 <ng-template #showMap>
-  <div fxLayout="row" class="map-container">
-      <h4 class="mat-subheading-1">{{ circuitData.Circuit.circuitName }}</h4>
-    <button mat-icon-button (click)="map = !map"><mat-icon>map</mat-icon></button>
-    </div>
-    <div>
-      
     <agm-map 
         [mapTypeId]="'hybrid'"
         [zoom] = 14
@@ -35,8 +31,7 @@
         [longitude]="circuitData.Circuit.Location.long * 1"
       >
       </agm-map>
-    </div>
-    </ng-template>
+</ng-template>
 
 
 
