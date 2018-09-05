@@ -38,7 +38,6 @@ import { GpDataService } from './main/gp.data.service';
 
 // Models
 import { Eras } from './main/eras.model';
-import { GoogleMapComponent } from './main/race/circuit/google-map/google-map.component';
 
 
 
@@ -61,8 +60,7 @@ import { GoogleMapComponent } from './main/race/circuit/google-map/google-map.co
     ResultsComponent,
     OverviewComponent,
     ConstructorsComponent,
-    DriversComponent,
-    GoogleMapComponent
+    DriversComponent
   ],
   imports: [
     AppRoutingModule,
