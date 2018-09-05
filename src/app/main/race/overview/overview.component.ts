@@ -8,7 +8,7 @@ import { RaceModel } from '../race.model';
 })
 export class OverviewComponent implements OnInit {
 
-  @Input() data: RaceModel;
+  @Input() data;
   constructor() { }
 
   ngOnInit() {
