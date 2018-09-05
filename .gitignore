@@ -38,4 +38,3 @@ testem.log
 Thumbs.db
 
 # Redundencies
-/src/app/main/race/circuit/google-map
