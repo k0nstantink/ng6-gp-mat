@@ -5,7 +5,6 @@ import { Results } from './results';
 import { Observable, pipe, Subscription, ObjectUnsubscribedError } from 'rxjs';
 import { switchMap, map } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-race',
   templateUrl: './race.component.html',
