@@ -8,7 +8,7 @@ import { Circuit } from './circuits.model';
 })
 export class CircuitComponent implements OnInit {
 
-  @Input() circuitData: Circuit;
+  @Input() circuitData;
 
  toggleCircuit = false;
  latitude;
