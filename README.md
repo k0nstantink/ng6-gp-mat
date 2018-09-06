@@ -53,3 +53,6 @@ F1 Stats App uses a number of open source projects to work properly:
 
 * [Angular6] - JavaScript Framework
 * [Angular Material] - Material Design components for Angular
+
+### Hosted on Heroku (F12 to view in Mobile mode)
+https://ng6-gp-mat.herokuapp.com/
